@@ -1,1 +1,30 @@
+@startuml
+left to right direction
+actor "Судья" as sud
+  usecase "Просмотр своих дисциплин" as UC1
+  usecase "Ввод результатов" as UC2
+  usecase "Подтверждение результатов" as UC3
+  usecase "Просмотр протоколов" as UC4
+  
+actor "Администратор" as adm
+  usecase "Управление пользователями" as UC5
+  usecase "Управление соревнованиями" as UC6
+  usecase "Управление участниками" as UC7
+  usecase "Управление дисциплинами" as UC8
+  usecase "Назначение судей" as UC9
+  usecase "Публикация результатов" as UC10
+  usecase "Формирование отчётов" as UC11
+  
+sud --> UC1
+sud --> UC2
+sud --> UC3
+sud --> UC4
 
+adm --> UC5
+adm --> UC6
+adm --> UC7
+adm --> UC8
+adm --> UC9
+adm --> UC10
+adm --> UC11
+@enduml
